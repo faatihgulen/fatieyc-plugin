@@ -21,11 +21,14 @@
 <body>
 <main>
   <h1>Fatieyc Plugin — Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-09-21 · Publisher: Fatih Gülen · Contact: <a href="mailto:mimarmisali@gmail.com">mimarmisali@gmail.com</a><br>
+  <p class="meta">Last updated: 2026-09-22 · Publisher: Fatih Gülen · Contact: <a href="mailto:mimarmisali@gmail.com">mimarmisali@gmail.com</a><br>
   Applies to: Fatieyc Plugin for AutoCAD 2025 / 2026 / 2027 (all versions)</p>
 
   <h2>1. Data we collect</h2>
-  <p>Fatieyc Plugin does <strong>not</strong> collect, transmit, sell or share any personal data or usage data. It contains no analytics, telemetry, crash reporting, advertising, third-party SDKs or licensing server, and it makes no network connections.</p>
+  <p>Fatieyc Plugin does <strong>not</strong> collect, sell or share any personal data or usage data. It contains no analytics, telemetry, crash reporting, advertising or third-party SDKs.</p>
+
+  <h2>1a. License verification</h2>
+  <p>Because this is a paid app, the plugin verifies your license. When you run a plugin command it sends your <strong>signed-in Autodesk account id</strong> and this app's <strong>Autodesk App Store id</strong> to Autodesk's entitlement web service (<code>apps.autodesk.com</code>) to confirm your account is licensed to use it. No drawing content or personal file data is sent. The result, the date of the last successful check and the date you first used the plugin (used for the trial period) are stored locally in <code>%APPDATA%\FatieycPlugin\license.dat</code> so the plugin can work offline for a short period. This is the plugin's only network connection.</p>
 
   <h2>2. Data stored locally on your computer</h2>
   <p>The plugin saves the following files only on your own computer. They are never sent to the publisher or anyone else.</p>
@@ -33,16 +36,19 @@
     <tr><th>File / location</th><th>Purpose</th></tr>
     <tr><td><code>%APPDATA%\FatieycPlugin\layer_settings.json</code></td><td>Area Calculator layer settings</td></tr>
     <tr><td><code>%APPDATA%\FatieycPlugin\explodeview.settings</code></td><td>Exploded Layout options</td></tr>
+    <tr><td><code>%APPDATA%\FatieycPlugin\license.dat</code></td><td>First-use date and cached license-verification result</td></tr>
+    <tr><td><code>%LOCALAPPDATA%\FatieycPlugin\state.bin</code></td><td>Second copy of the same licence/trial dates</td></tr>
+    <tr><td>Registry <code>HKCU\Software\FatieycPlugin</code></td><td>Third copy of the same licence/trial dates</td></tr>
     <tr><td>Folder you choose when exporting</td><td>Excel/CSV, OBJ/MTL and DWG files you export, plus small export/import log files</td></tr>
     <tr><td><code>%TEMP%</code> (<code>fatieyc_*</code>, <code>*_exploded_*.dwg</code>)</td><td>Temporary helper files</td></tr>
     <tr><td>Blender add-ons folder (optional)</td><td>Blender importer add-on, copied only when you request it</td></tr>
   </table>
 
   <h2>3. Third parties</h2>
-  <p>No data is shared with any third party, including legal affiliates of the publisher (parent, subsidiary or related entities). If this ever changes, any such third party will be required to provide the same protection of the data as stated in this policy, and this policy will be updated before the change takes effect.</p>
+  <p>The only external service contacted is <strong>Autodesk's own entitlement web service</strong>, used solely to verify your license as described in section 1a; it receives only your Autodesk account id and this app's store id, and its use of that data is governed by Autodesk's own privacy policy. No data is shared with any other third party, including legal affiliates of the publisher (parent, subsidiary or related entities). If this ever changes, any such third party will be required to provide the same protection of the data as stated in this policy, and this policy will be updated before the change takes effect.</p>
 
   <h2>4. Data retention and deletion</h2>
-  <p>The publisher holds no user data, so nothing is retained by the publisher. Local files remain on your computer until you delete them. Uninstalling the plugin removes the plugin bundle. You can delete <code>%APPDATA%\FatieycPlugin</code> at any time to remove all saved settings.</p>
+  <p>The publisher holds no user data, so nothing is retained by the publisher. Local files remain on your computer until you delete them. Uninstalling the plugin removes the plugin bundle. You can delete <code>%APPDATA%\FatieycPlugin</code> and <code>%LOCALAPPDATA%\FatieycPlugin</code>, and the registry key <code>HKCU\Software\FatieycPlugin</code>, at any time to remove all saved settings and licence data.</p>
 
   <h2>5. Revoking consent and requesting deletion</h2>
   <p>Because no data is collected, there is no consent to revoke and no data held by the publisher to delete. You can stop all local storage by uninstalling the plugin and deleting the folders listed above. For any privacy question or request, email <a href="mailto:mimarmisali@gmail.com">mimarmisali@gmail.com</a>; we reply within 30 days.</p>
